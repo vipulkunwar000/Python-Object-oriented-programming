@@ -1,0 +1,30 @@
+# Show the inheritance in the Python
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        
+    def get_info(self):
+        print("The name of the employee is",self.name)
+        print("The age of the employee is",self.age)
+        
+class employee(Person):
+    # Here we return True
+    def is_employee(self,cla):
+        self.cla = cla
+        print(self.name, self.age, self.cla)
+    
+    
+    def city(self,city):
+        self.city = city
+        print(self.name+"'s city is",self.city)
+# Creating the objects
+o = employee("Vipul",20)
+#o.is_employee("sycs")
+#for example self.__d then d becomes the private variable and you can't access it.
+
+o.city("Mumbai")
+
+# super() function in the Python access the Parent class property in the child class
+
+        
